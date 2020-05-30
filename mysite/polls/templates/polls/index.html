@@ -1,7 +1,7 @@
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
-        <li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li>
+    <li><a href="{% url 'detail' question.id %}" style="font-family: 'Courier New', Courier, monospace;background-color: brown;color: chartreuse;font-size: 40px;font-weight: 900;">{{ question.question_text }}</a></li>
     {% endfor %}
     </ul>
 {% else %}

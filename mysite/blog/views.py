@@ -4,13 +4,13 @@ posts = [
     {
         'author':'Gauransh Soni',
         'title':'Blog Post',
-        'Content': 'First post Content'
+        'Content': 'First post Content',
         'date_posted': 'May 31,2020'
     },
     {
         'author':'Picografix',
         'title':'Blog  2',
-        'Content': 'Second post Content'
+        'Content': 'Second post Content',
         'date_posted': 'June 1,2020'
     }
 ]
@@ -21,4 +21,4 @@ def home(request):
     }
     return render(request,'blog/index.html',context)
 def about(request):
-    return render(request,'blog/about.html')
+    return render(request,'blog/about.html',{'title':'About Page'})
